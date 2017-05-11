@@ -4,7 +4,7 @@
        <span class="nav-title">{{title}}</span>
          <ul class="navBtn">
           <li v-for="item in navItems">
-            <a href="">{{item.name}}</a>
+            <a v-bind:href="item.href">{{item.name}}</a>
           </li>
          </ul>
        </nav>
@@ -17,8 +17,8 @@
       return {
         title: 'Multi-objective optimization',
         navItems: [
-            { name: 'result'},
-            { name: 'optimize'}
+            { name: 'result',href:'#/result'},
+            { name: 'optimize',href:'#/optimize'}
         ]
       }
     }
@@ -34,12 +34,17 @@
      color: inherit;
      line-height: 1;
      float: left;
-     padding:0rem 1rem;
+     padding: 1rem;
    }
   .navBtn{
     display: inline-block;
+    margin-left:-3rem;
    }
   .navBtn li{
     display: inline-block;
+    padding-left: 20px;
+   }
+   .navBtn li a{
+      text-decoration: none;
    }
 </style>
