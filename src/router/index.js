@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from '@/components/App'
-import Optimize from '@/components/Optimize'
-import Result from '@/components/Result'
+import Home from '../pages/Home'
 
 Vue.use(Router)
 
@@ -10,17 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'app',
-      component: App
+      name: 'home',
+      component: Home
     },
-    {
-      path:'/optimize',
-      name:'optimize',
-      component: Optimize
-    },{
-      path:'/result',
-      name:'result',
-      component: Result
-    }
   ]
 })
