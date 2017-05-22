@@ -9,7 +9,7 @@
           </li>
        </ul>
        <input class="searchInput" type="text" placeholder="搜索"/>
-       <div class="navHref"><a><span>登陆</span></a>&nbsp|&nbsp<a><span>注册</span></a></div>
+       <div class="navHref"><a><span>登陆</span></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a><span>注册</span></a></div>
     </header>
 </template>
 
@@ -37,7 +37,8 @@
        height:2.4rem;
        width:2.4rem;
        float:left;
-       padding:1rem;
+       padding-left:1rem;
+       padding-top:0.5rem;
     }
     .headerNav{
       list-style: none;
@@ -81,7 +82,7 @@
     .navHref{
       display: inline-block;
       font-size:1.0rem;
-      margin-left:0.9rem;
+      margin-left:11.9rem;
       color:#FFF;
     }
     .navHref a{

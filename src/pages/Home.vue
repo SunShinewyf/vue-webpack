@@ -1,15 +1,18 @@
 <template>
   <div class="home">
      <app-header></app-header>
+     <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import appHeader from '@/components/appHeader.vue'
+import appFooter from '@/components/appFooter.vue'
 export default {
   name: 'home',
   components: {
-    appHeader
+    appHeader,
+    appFooter
   },
   data () {
     return {
