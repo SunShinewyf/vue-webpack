@@ -1,7 +1,7 @@
 <template>
     <div class="part-line">
-        <p></p>
-        <img src="../assets/yellow.jpg"/>
+        <p>{{title}}</p>
+        <img src="../assets/yellow.png"/>
     </div>
 </template>
 
@@ -9,17 +9,21 @@
   export default{
     data () {
       return {
-        title: 'Multi-objective optimization',
-        navItems: [
-            { name: '首页',href:'#/home'},
-            { name: '专题',href:'#/special'},
-            { name: '推荐',href:'#/recommend'},
-            { name: '关于',href:'#/about'}
-        ]
+        title: '海岛之旅',
+        yellow:true
       }
     }
   }
 </script>
 <style scoped>
-
+p{
+   font-size:30px;
+   color:#666;
+   font-weight:bold;
+}
+img{
+  width:100px;
+  height:100px;  
+  margin-top:-35px;
+}
 </style>

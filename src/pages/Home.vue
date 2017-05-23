@@ -9,6 +9,8 @@
      </div>
      </div>
      <partLine></partLine>
+     <appList></appList>
+     <partLine></partLine>
      <app-footer></app-footer>
   </div>
 </template>
@@ -17,12 +19,14 @@
 import appHeader from '@/components/appHeader.vue'
 import appFooter from '@/components/appFooter.vue'
 import partLine from '@/components/partLine.vue'
+import appList from '@/components/appList.vue'
 export default {
   name: 'home',
   components: {
     appHeader,
     appFooter,
-    partLine
+    partLine,
+    appList
   },
   data () {
     return {
