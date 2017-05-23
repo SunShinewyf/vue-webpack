@@ -8,6 +8,7 @@
         <p>享受生活和分享喜悦</p>
      </div>
      </div>
+     <partLine></partLine>
      <app-footer></app-footer>
   </div>
 </template>
@@ -15,11 +16,13 @@
 <script>
 import appHeader from '@/components/appHeader.vue'
 import appFooter from '@/components/appFooter.vue'
+import partLine from '@/components/partLine.vue'
 export default {
   name: 'home',
   components: {
     appHeader,
-    appFooter
+    appFooter,
+    partLine
   },
   data () {
     return {
