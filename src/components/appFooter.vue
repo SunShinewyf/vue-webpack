@@ -3,23 +3,23 @@
        <div class="tips">
          <p>致力于为出游的小伙伴们，提供物超所值的旅游线路，令你享受旅途每刻</p>
        </div>
-       <div class="about">
-          <ul>关于我们</ul>
-          <a><li>企业资质</li></a>
-          <a><li>主题旅游</li></a>
-          <a><li>网站地图</li></a>
-       </div>
-       <div class="terms">
-       <ul>授权条款</ul>
-          <a><li>用户协议</li></a>
-          <a><li>隐私条款</li></a>
-          <a><li>帮助中心</li></a>
-       </div>
-       <div class="follow">
-       <ul>关注我们</ul>
-          <a><li>隐私条款</li></a>
-          <a><li>帮助中心</li></a>   
-       </div>
+       <ul class="about">
+       <p class="title">关于我们</p>
+          <a href=""><li>企业资质</li></a>
+          <a href=""><li>主题旅游</li></a>
+          <a href=""><li>网站地图</li></a>
+       </ul>
+       <ul class="terms">
+       <p class="title">授权条款</p>
+          <a href=""><li>用户协议</li></a>
+          <a href=""><li>隐私条款</li></a>
+          <a href=""><li>帮助中心</li></a>
+       </ul>
+       <ul class="follow">
+      <p class="title">关注我们</p>
+          <a href=""><li>微信</li></a>
+          <a href=""><li>微博</li></a> 
+       </ul>
     </footer>
 </template>
 
@@ -43,18 +43,27 @@
     p{
         padding:40px;
     }
-    div{
+    .tips{
+        width:20%;
         float:left;
-        width:25%;
-        margin-top:30px;
     }
     ul{
-        font-size:16px;
-        margin-left:-40px;
+        width:22%;
+        float:left;
+    }
+    ul p{
+        font-size:18px;
         font-weight:bold;
+        margin-top:-20px;
+        margin-bottom:-40px;
+    }
+    ul a{
+         text-decoration:none;
+         color:#fff;
     }
     li{
         list-style:none;
         margin-top:20px;
+        text-align:center;
     }
 </style>
